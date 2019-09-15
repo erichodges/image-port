@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { StaticQuery, graphql } from "gatsby"
-import { HelmetDatoCms } from 'gatsby-source-datocms'
+import { graphql, Link, StaticQuery } from 'gatsby';
+import { HelmetDatoCms } from 'gatsby-source-datocms';
+import PropTypes from 'prop-types';
+import React from 'react';
+import '../styles/index.sass';
 
-import '../styles/index.sass'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery query={graphql`
@@ -56,6 +55,9 @@ const TemplateWrapper = ({ children }) => (
               __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
             }}
           />
+          <Link to="http://github.com/erichodges">
+          Github
+          </Link>
           <ul className="sidebar__menu">
             <li>
               <Link to="/">Home</Link>
