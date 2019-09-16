@@ -55,9 +55,11 @@ const TemplateWrapper = ({ children }) => (
               __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
             }}
           />
-          <Link className="sidebar__github" to="http://github.com/erichodges">
+          <div className="sidebar__github">
+          <Link to="http://github.com/erichodges">
           Github
           </Link>
+          </div>
           <ul className="sidebar__menu">
             <li>
               <Link to="/">Home</Link>
