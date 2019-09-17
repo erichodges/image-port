@@ -57,7 +57,7 @@ const TemplateWrapper = ({ children }) => (
           />
           <div className="sidebar__github">
           <a href="http://github.com/erichodges">
-          Github
+          Github repo
           </a>
           </div>
           <ul className="sidebar__menu">
