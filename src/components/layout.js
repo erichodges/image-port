@@ -92,6 +92,7 @@ const TemplateWrapper = ({ children }) => (
             </div>
           </div>
         </div>
+        <div className="contianer__header"><h2>Portfolio</h2></div>
         {children}
       </div>
     </div>
