@@ -1,9 +1,9 @@
-import React from 'react'
-import Slider from 'react-slick'
-import { HelmetDatoCms } from 'gatsby-source-datocms'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
-import Layout from "../components/layout"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { HelmetDatoCms } from 'gatsby-source-datocms';
+import React from 'react';
+import Slider from 'react-slick';
+import Layout from "../components/layout";
 
 export default ({ data }) => (
   <Layout>
@@ -13,7 +13,7 @@ export default ({ data }) => (
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
         <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
         <div className="sheet__slider">
-          <Slider infinite={true} slidesToShow={2} arrows>
+          <Slider infinite={true} slidesToShow={1} arrows>
             {data.datoCmsWork.gallery.map(({ fluid }) => (
               <img alt={data.datoCmsWork.title} key={fluid.src} src={fluid.src} />
             ))}
