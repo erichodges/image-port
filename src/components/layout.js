@@ -62,7 +62,7 @@ const TemplateWrapper = ({ children }) => (
           </div>
           <ul className="sidebar__menu">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Portfolio</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -92,7 +92,6 @@ const TemplateWrapper = ({ children }) => (
             </div>
           </div>
         </div>
-        <div className="contianer__header"><h2>Portfolio</h2></div>
         {children}
       </div>
     </div>
